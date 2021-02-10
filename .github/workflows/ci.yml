@@ -15,7 +15,8 @@ jobs:
       run: |
         #npm install
         #npm run-script build
-        echo abc > index.html
+        mkdir build 
+        echo abc > build/index.html
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
