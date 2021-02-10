@@ -13,8 +13,9 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
-        npm install
-        npm run-script build
+        #npm install
+        #npm run-script build
+        echo abc > index.html
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
